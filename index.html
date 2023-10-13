@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(119, 104, 213);
+        }
+        .container{
+           
+            width: 400px;
+            padding: 40px;
+            background-color: rgb(148, 116, 199);
+            border-radius:20px;
+            font-family: cursive;
+        }
+        #text{
+            margin: 10px 0 30px 0;
+            width: 400px;
+            font-size: 15px;
+            height: 80px;
+            font-family:cursive;
+        }
+        .Count_holders{
+            display: flex;
+            justify-content: space-between;
+            color: rgb(240, 226, 226)
+        }
+        #total_count{
+            color: greenyellow;
+        }
+
+        #remainig_count{
+            color: rgb(113, 33, 33);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="margin-top: 20px;text-align: center;">Real Time Character Counter</h2>
+        <input type="text" id="text" maxlength="50"  placeholder="Please write your text here..."/>
+
+        <div class="Count_holders">
+            <h4 >Total Characters: <span id="total_count">0</span> </h4>
+            <h4 >Remaining: <span id="remainig_count">50</span></h4>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
